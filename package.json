@@ -1,0 +1,37 @@
+{
+  "name": "online-blood-bank-system",
+  "version": "1.0.0",
+  "description": "Smart Online Blood Booking and Donor Management System",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "python backend/manage.py runserver 8000",
+    "server:dev": "python backend/manage.py runserver 8000",
+    "client:dev": "vite --config client/vite.config.mjs",
+    "client:build": "vite build --config client/vite.config.mjs",
+    "client:preview": "vite preview --config client/vite.config.mjs",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "smoke-test": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "blood-bank",
+    "booking",
+    "donor-management",
+    "sqlite",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.2"
+  }
+}
+
+
